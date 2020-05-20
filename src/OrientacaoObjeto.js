@@ -1,36 +1,36 @@
 module.exports = class OrientacaoObjeto {
     constructor() {
-        this.peso = 0;
-        this.idade = 0;
-        this.altura = 0;
+        this._peso = 0;
+        this._idade = 0;
+        this._altura = 0;
     }
 
-    setIdade(idade) {
-        this.idade = idade;
+    set idade(idade) {
+        this._idade = idade;
     }
 
-    getIdade() {
-        return this.idade;
+    get idade() {
+        return this._idade;
     }
 
-    setPeso(peso) {
-        this.peso = peso;
+    set peso(peso) {
+        this._peso = peso;
     }
 
-    getPeso() {
-        return this.peso;
+    get peso() {
+        return this._peso;
     }
 
-    setAltura(altura) {
-        this.altura = altura;
+    set altura(altura) {
+        this._altura = altura;
     }
 
-    getAltura() {
-        return this.altura;
+    get altura() {
+        return this._altura;
     }
 
     multiplica() {
-        return (this.getIdade() * this.getAltura() * this.getPeso())
+        return (this.idade * this.altura * this.peso)
     }
 }
 

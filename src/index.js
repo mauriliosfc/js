@@ -13,13 +13,13 @@ FuncaoRecursiva.resultadoRecursivo()
 console.log('----------------------------------------------------------')
 const OO = new OrientacaoObjeto()
 
-OO.setAltura(1)
-OO.setIdade(2)
-OO.setPeso(3)
+OO.altura = 1
+OO.idade = 2
+OO.peso = 3
 
-console.log(`Altura: ${OO.getAltura()}`)
-console.log(`Idade: ${OO.getIdade()}`)
-console.log(`Peso: ${OO.getPeso()}`)
+console.log(`Altura: ${OO.altura}`)
+console.log(`Idade: ${OO.idade}`)
+console.log(`Peso: ${OO.peso}`)
 
 console.log(`Multiplicação: ${OO.multiplica()}`)
 
