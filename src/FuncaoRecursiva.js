@@ -1,12 +1,7 @@
 function fn_recursiva(i) {
-    let resDiv2 = i % 2
-    let resDiv3 = i % 3
-    let resDiv10 = i % 10
-
-    if (resDiv2 == 0 && resDiv3 == 0 && resDiv10 == 0)
+    if ((i % 2) == 0 && (i % 3) == 0 && (i % 10) == 0)
         return i;
-    else
-        return fn_recursiva(i + 1);
+    return fn_recursiva(i + 1);
 }
 
 exports.resultadoRecursivo = () => {
